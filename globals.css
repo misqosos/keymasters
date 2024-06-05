@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+    
+    /*fonts*/
+    --fontFamily: ubuntu;
+    /*colors*/
+    --headerBackground: rgb(48,48,48);
+    --headerFontColor: rgb(153,153,153);
+    --highlighted: rgb(205,198,187);
+  }

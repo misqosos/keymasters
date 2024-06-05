@@ -1,0 +1,8 @@
+
+body, html {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-image: url("assets/images/key-hole.png");
+    background-size: 200% auto;
+}
+

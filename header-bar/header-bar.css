@@ -1,0 +1,53 @@
+
+.header-bar-wrapper-onscroll {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: var(--headerBackground);
+    color: var(--headerFontColor);
+    font-size: 2vw;
+    font-family: var(--fontFamily);
+    text-align: center;
+    padding: 1vw;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s;
+    box-sizing: border-box;
+    height: 4.5vw;
+}
+
+.header-bar-wrapper-top {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: var(--headerBackground);
+    color: var(--headerFontColor);
+    font-size: 2vw;
+    font-family: var(--fontFamily);
+    text-align: center;
+    padding: 1vw;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s;
+    box-sizing: border-box;
+    height: 4.5vw;
+}
+
+.header-bar-wrapper-onscroll:hover {
+    opacity: 1;
+}
+
+.header-bar-wrapper-top a, .header-bar-wrapper-onscroll a {
+    text-decoration: none;
+    color: inherit;
+    margin: 2vw;
+    transition: border-bottom-width 0.5s;
+    border-bottom-width: 0.1vw;
+    cursor: pointer;
+}
+
+.header-bar-wrapper-top a:hover, .header-bar-wrapper-onscroll a:hover {
+    border-bottom: solid;
+    border-bottom-width: 0.3vw;
+}

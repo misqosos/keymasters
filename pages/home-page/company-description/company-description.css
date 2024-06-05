@@ -1,0 +1,181 @@
+
+.logo-header-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: var(--fontFamily);
+    text-align: center;
+    position: relative;
+    overflow:auto;
+    opacity: 1;
+    animation: show-header 6s;
+    -webkit-animation: show-header 6s;
+}
+
+.header-title {
+    font-size: 6vw; 
+    margin-bottom: 8vw;
+}
+
+.image-title {
+    height: 20vw; 
+    width: auto;
+}
+
+.company-description-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: var(--fontFamily);
+    text-align: center;
+    position: relative;
+    border-bottom: 0.1vw solid;
+    transition: transform 2s;
+    scroll-margin-top: 7.5vw;
+}
+
+.background-image-description {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url("assets/images/key-hole.jpg"); */
+}
+
+.description-title {
+    font-size: 3vw;
+    margin: 3vw;
+    position: relative;
+}
+
+.description-overview {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 2vw;
+    position: relative;
+}
+
+.description-contacts {
+    margin-bottom: 5vw;
+    position: relative;
+}
+
+.description-images {
+    margin-bottom: 2vw;
+    position: relative;
+    overflow: auto;
+    text-align: center;
+}
+
+.key-product-wrapper {
+    display: inline-block;
+}
+
+.key-product img {
+    width: 13vw;
+    height: auto;
+}
+
+.key-product {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 5vw;
+    border-style: solid;
+    border-color: rgb(73, 73, 73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw;
+    margin-top: 0;
+    transition: border-radius 0.5s, border-color 0.5s;
+}
+
+.key-product:hover {
+    border-radius: 2vw;
+    border-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.key-product:hover + .product-label {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.top-element-title {
+    margin-top: 6vw;
+}
+
+.key-image {
+    height: 100%; 
+    width: auto; 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    display: none;
+}
+
+.product-label {
+    font-family: var(--fontFamily);
+}
+
+.more {
+    position: absolute;
+    right: 3vw;
+    bottom: 0;
+    top: 0;
+    align-items: center;
+    display: flex;
+}
+
+.more-arrow {
+    display: block; 
+    font-size: 3vw; 
+    margin-bottom: 2vw;
+    width: max-content;
+    position: relative;
+    left: 0vw;
+    transition: left 0.5s;
+}
+
+.more-text {
+    font-size: 1.2vw;
+}
+
+.more-label:hover {
+    cursor: pointer;
+    color: darkred;
+}
+
+.more-label:hover > .more-arrow {
+    left: 7vw;
+}
+
+.more-label:hover > .more-text {
+    cursor: pointer;
+}
+
+.social-media-icon {
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@-webkit-keyframes zoom-paragraph {
+    50% { scale: 1.5; }
+    100% { scale: 1; }
+}
+  
+@keyframes zoom-paragraph {
+    50% { scale: 1.5; }
+    100% { scale: 1; }
+}
+
+@-webkit-keyframes show-header {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@keyframes show-header {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
